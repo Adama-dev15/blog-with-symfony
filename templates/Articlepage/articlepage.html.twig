@@ -1,0 +1,12 @@
+{% extends "base.html.twig" %}
+{% block title %} articles | {{parent()}} {% endblock %}
+{% block body %}
+<h1>Bienvenue sur la page des articles</h1>
+ <div>
+ <ul>
+{% for article in articles %}
+<li>{{article}}</li>
+{% endfor %}
+ </ul>
+ </div>
+{% endblock %}
